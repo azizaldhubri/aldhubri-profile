@@ -1,8 +1,8 @@
 {
-  "name": "profile_aziz",
+  "name": "aldhubri-profile",
   "version": "1.0.0",
   "private": true,
-   "homepage":"http://azizaldhubri.github.io/profile_aziz",
+   "homepage":"http://azizaldhubri.github.io/aldhubri-profile",
   "scripts": { 
     "start": "react-scripts start",
     "build": "react-scripts build",
