@@ -1,8 +1,7 @@
 {
   "name": "aldhubri-profile",
   "version": "1.0.0",
-  "private": true,
-   "homepage":"http://azizaldhubri.github.io/aldhubri-profile",
+  "private": true,  
   "scripts": {     
     "build": "react-scripts build",
     "predeploy":"npm run build",
