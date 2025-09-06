@@ -46,22 +46,26 @@ export default function HomePage({locale}){
      const email = 'azizaldhubri@gmail.com';     
     const mailtoLink = `mailto:${email}`;
     // Text animation 
-    // const text = "Hello There!";
-  const text = lng=='Eng'? "Hello There!":"مرحبا بكم! "; 
+    // const text = "Hello There!"; 
+   const text1 = lng=='Eng'? "Hello There!":"مرحبا بكم! "; 
+  const text2 = lng=='Eng'? "Front-End Developer":" مطور واجهة ويب "; 
 
   // const text = messages[lang];
   const [shown, setShown] = useState("");
+   const [show, setShow] = useState(false);
   const speed = 100;        // سرعة الكتابة بالمللي ثانية لكل حرف
   const startDelay = 300;  // تأخير البداية (اختياري)
 
  useEffect(() => {
     setShown("");
+  setShow(false);
     let i = 0;
     const start = setTimeout(() => {
+     setShow(true);
       const timer = setInterval(() => {
         i++;
-        setShown(text.substring(0, i));
-        if (i === text.length) clearInterval(timer);
+        setShown(text1.substring(0, i));
+        if (i === text1.length) clearInterval(timer);
       }, speed);
     }, startDelay);
 
@@ -92,10 +96,12 @@ export default function HomePage({locale}){
       }}>
               {/* <CardActionArea > */}
       <CardContent>
-        <Typography sx={{
+            <Typography 
+        className={`fade-text ${show ? "visible" : ""} text-red-600 `}     
+        sx={{
           fontSize: 'larger' ,
-          fontFamily:'sans-serif' }}>
-            Front-End Developer
+          fontFamily:'sans-serif' }}>            
+            {text2}
         </Typography>
         <Typography gutterBottom variant="h5" component="div">
                 {t('Aziz Aldhubri')}
