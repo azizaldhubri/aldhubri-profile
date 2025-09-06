@@ -11,7 +11,7 @@ export default function Dashboard({toggleTheme,mode,handleLangugeClick ,locale})
         <Box  className='     relative flex justify-center   '>   
                   <TopBar click={toggleTheme}  mode={mode}  handleLangugeClick={handleLangugeClick} locale={locale}/>  
                   </Box>          
-          <Box  className='     relative    'sx={{ top:'80px'   }}> 
+          <Box  className='     relative    'sx={{ marginTop:'80px'   }} > 
             <Outlet/>          
           </Box> 
         </div>
