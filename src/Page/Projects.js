@@ -74,39 +74,34 @@ export default function Projects(props) {
                     <ProjectItem
                       src="/img1/react4.PNG"                       
                       title="Human resurce with taskes(Latest) Please Click Here"
-                      link="https://hr-front-end2-gilt.vercel.app/"
-                      external
+                      link="https://hr-front-end2-gilt.vercel.app/"                     
                       desc="A very excellent project that enables us to manage human resources, manage tasks, and control permissions.
                          Technologies used in the project:Bootstrap, Material-UI, Context, React Hooks"
                       />
                     <ProjectItem
                       src="/img1/tasheel_store.PNG"
                       title="tasheel_store"
-                      link="https://tasheel-store.vercel.app/"
-                      external
+                      link="https://tasheel-store.vercel.app/"                  
                       desc="Sample of an online store built using Redux, React.js, Bootstrap, and Localstorage"
                       />
                   <ProjectItem  
                     src="/img1/www.png"
                     title="To Do list"
                     link="https://venerable-kelpie-769c57.netlify.app/"
-                     imgClass="w-full   lg:h-60 md:h-48 xs:h-36 sm:h-60 sm:w-11/12"
-                    external
+                     imgClass="w-full   lg:h-60 md:h-48 xs:h-36 sm:h-60 sm:w-11/12"                   
                     desc="Simple project to manage small tasks"
                   />
                   <ProjectItem  
                     src="/img1/weather1.PNG"
                     title="Weather"
                     link="https://thunderous-cat-2eb857.netlify.app/"
-                     imgClass="w-full   lg:h-60 md:h-48 xs:h-36 sm:h-60 sm:w-11/12"
-                    external
+                     imgClass="w-full   lg:h-60 md:h-48 xs:h-36 sm:h-60 sm:w-11/12"                     
                     desc="Weather"
                   />
                 <ProjectItem
                   src="/img1/ecommerce2.PNG"
                   title="e-commerce with React"
-                  link="#"
-                  external
+                  link="#"                   
                    desc="E-commerce management website"
                 />
               </>
@@ -181,7 +176,7 @@ export default function Projects(props) {
   );
 }
 
-function ProjectItem({ src, title, link,desc, external ,imgClass = "w-[90%]"}) {
+function ProjectItem({ src, title, link,desc ,imgClass = "w-[90%]"}) {
  
   const [open, setOpen] = useState(false);
  const timeoutRef = useRef(null);
@@ -225,16 +220,10 @@ function DescriptionProject(){
 
         </div>
       <p>{title}</p>
-      <div className='  w-10 h-10'>
-      {external ? (
-        <Link to={link} target="_blank" rel="noopener noreferrer" className="text-red-500 underline hover:scale-110  ">
-          Visit
-        </Link>
-      ) : (        
+      <div className='  w-10 h-10'>          
         <a href={link} target="_blank" rel="noopener noreferrer" className="text-blue-500 underline hover:text-xl">
           Visit
-        </a>
-      )}
+        </a>  
 
       </div>
        
