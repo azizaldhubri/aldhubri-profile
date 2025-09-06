@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "private": true,
    "homepage":"http://azizaldhubri.github.io/aldhubri-profile",
-  "scripts": { 
-    "start": "react-scripts start",
+  "scripts": {     
     "build": "react-scripts build",
     "predeploy":"npm run build",
     "deploy":"gh-pages -d build",
