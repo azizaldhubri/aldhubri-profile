@@ -54,15 +54,14 @@ export default function HomePage({locale}){
   const speed = 100;        // سرعة الكتابة بالمللي ثانية لكل حرف
   const startDelay = 300;  // تأخير البداية (اختياري)
 
-  useEffect(() => {
-    setShown('');
+ useEffect(() => {
+    setShown("");
     let i = 0;
-    let timer;
     const start = setTimeout(() => {
-        timer = setInterval(() => {
-        setShown((prev) => prev + text[i]);
+      const timer = setInterval(() => {
         i++;
-        if (i >= text.length) clearInterval(timer);
+        setShown(text.substring(0, i));
+        if (i === text.length) clearInterval(timer);
       }, speed);
     }, startDelay);
 
