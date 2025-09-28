@@ -39,7 +39,7 @@ export default function HomePage({locale}){
     const [expanded, setExpanded] = useState(false);
   
  const [bannerRef, bannerVisible] = useOnScreen({ threshold: 0 });
-    const phoneNumber = '967770515088'; // استبدل برقم الهاتف الخاص بك
+    const phoneNumber = '966538047805'; // استبدل برقم الهاتف الخاص بك
      const message = 'مرحباً! كيف يمكنني مساعدتك؟'; // الرسالة المسبقة (اختياري)
      const waLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
