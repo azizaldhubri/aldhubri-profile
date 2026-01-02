@@ -29,7 +29,9 @@ export default function About({locale}) {
            style={{  boxShadow:' 1px 2px 4px 8px rgb(11 11 11 / 39%)  '}}>
             <img
               // src={require('../imges/aziz.jpg')}
-              src='/img1/azizprofile.jpg' 
+              // src='/img1/azizprofile.jpg' 
+              src='/img1/a2.jpg' 
+
               alt="Aziz"
               // className="rounded-full w-full max-w-xs"
               className="rounded-full  "
