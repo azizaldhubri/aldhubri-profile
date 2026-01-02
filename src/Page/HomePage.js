@@ -107,7 +107,8 @@ export default function HomePage({locale}){
                 {t('Aziz Aldhubri')}
         </Typography>
         <img  className='   rounded-full p-1' 
-            src='/img1/azizprofile.jpg'                 
+            // src='/img1/azizprofile.jpg'                 
+            src='/img1/a2.jpg'                 
             style={{maxWidth:'150px',border:'2px solid red'}}>
         </img>
 
