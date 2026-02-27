@@ -73,8 +73,8 @@ export default function Projects(props) {
               <>
                     <ProjectItem
                       src="/img1/react4.PNG"                       
-                      title="Human resurce with taskes(Latest) Please Click Here"
-                      link="https://hr-front-end2-gilt.vercel.app/"                     
+                      title="Human resurce with taskes(Latest) Please Click Here"                                         
+                      link="https://human-resurce.vercel.app/"                     
                       desc="A very excellent project that enables us to manage human resources, manage tasks, and control permissions.
                          Technologies used in the project:Bootstrap, Material-UI, Context, React Hooks"
                       />
