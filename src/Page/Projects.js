@@ -87,7 +87,8 @@ export default function Projects(props) {
                      <ProjectItem
                       src="/images/petroplus.PNG"
                       title="PetroPlus"
-                      link="https://petroplus-eight.vercel.app/"                  
+                      link="https://petroplus-eight.vercel.app/"      
+                      imgClass="w-full   lg:h-60 md:h-48 xs:h-36 sm:h-60 sm:w-11/12"  
                       desc="A project that allows customers to receive a reward when they reach a specified quantity."
                       />
                   <ProjectItem  
