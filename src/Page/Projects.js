@@ -84,6 +84,12 @@ export default function Projects(props) {
                       link="https://tasheel-store.vercel.app/"                  
                       desc="Sample of an online store built using Redux, React.js, Bootstrap, and Localstorage"
                       />
+                     <ProjectItem
+                      src="/images/petroplus.PNG"
+                      title="PetroPlus"
+                      link="https://petroplus-eight.vercel.app/"                  
+                      desc="A project that allows customers to receive a reward when they reach a specified quantity."
+                      />
                   <ProjectItem  
                     src="/img1/www.png"
                     title="To Do list"
